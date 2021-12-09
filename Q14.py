@@ -15,11 +15,10 @@ def fibonacci(n):
         return 1
     else:
         return fibonacci(n-1)+fibonacci(n-2)
-
-if __name__ == '__main__':
-    index = int(input())
-    print("fibonacci("+str(index)+") is "+str(fibonacci(index)))
     
+if __name__ == '__main__':
+    start_num = int(input())
+    print('fibonacci({}) is {}'.format(start_num, fibonacci(start_num)))
     
     
     
