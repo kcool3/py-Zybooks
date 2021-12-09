@@ -46,7 +46,7 @@ def main():
             month_str = strings.split(',')[0].split()[0]
             month_int = str(get_month_as_int(month_str))
             date = strings.split(',')[0].split()[1]
-            year = strings[-4:]
+            year = strings[-5:]
             final_date = month_int + '/' + date + '/' + year
             print(final_date)
         else:
