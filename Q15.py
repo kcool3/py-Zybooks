@@ -27,7 +27,7 @@ def output_without_whitespace(input_str):
             print(letter, end='')
     print()
 if __name__ == '__main__':
-    phrase = input('Enter a sentence or phrase: \n')
+    phrase = input('Enter a sentence or phrase:\n')
     print('\nYou entered: ' + phrase)
     print('\nNumber of characters: ' + str(get_num_of_characters(phrase)))
     output_without_whitespace(phrase)
