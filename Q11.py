@@ -8,8 +8,8 @@ types of cars
 """
 #This will allow user to input anything.
 first_name = input()
-location = input()
+generic_location = input()
 whole_number = input()
 plural_noun = input()
 #This will print out the Mad Lib with user inputs.
-print(first_name, 'went to', location, 'to buy', whole_number, 'different types of', plural_noun)
+print(first_name, 'went to', generic_location, 'to buy', whole_number, 'different types of', plural_noun)
