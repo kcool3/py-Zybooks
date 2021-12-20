@@ -9,7 +9,7 @@ Zero Division Exception: integer division or modulo by zero
 try:
     user_num=int(input())
     div_num=int(input())
-    print(' {}'.format(user_num/div_num))
+    print(' {}'.format(user_num/div_num)) # this part has issues with producing output of 5.0 instead of 5.
 
 except ZeroDivisionError:
     print("Zero Division Exception: integer division or modulo by zero")
