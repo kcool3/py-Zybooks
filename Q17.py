@@ -5,7 +5,7 @@ then the returned average will be:
 3.0'''
 
 def calc_average(nums):
-    return sum(nums) / len(nums)
+    return sum(nums) / len(nums) # this is only code that you need to enter for this question to get correct.
 if __name__ == '__main__':
     nums = [1, 2, 3, 4, 5]
     print(calc_average(nums))
