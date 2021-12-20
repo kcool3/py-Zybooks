@@ -40,13 +40,12 @@ def main():
         user_str.append(input())
         if (user_str[-1] == '-1'):
             status = False
-    print('\n')
     for strings in user_str:
         if(',' in strings):
             month_str = strings.split(',')[0].split()[0]
             month_int = str(get_month_as_int(month_str))
             date = strings.split(',')[0].split()[1]
-            year = strings[-5:]
+            year = strings[-4:]
             final_date = month_int + '/' + date + '/' + year
             print(final_date)
         else:
