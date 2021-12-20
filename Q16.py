@@ -12,21 +12,28 @@ Wax -- $3
 ----
 Total price: $15'''
 
+services = { 'Air freshener' : 1 , 'Rain repellent': 2, 'Tire shine' : 2, 'Wax' : 3, 'Vacuum' : 5 }
+base_wash = 10
+total = 0
 
-service1 = input()
-service2 = input()
-additional = {'Air Freshner':1, 'Rain Repellent':2, 'Tire shine':2, 'Wax':3, 'Vacuum':5}
+service_choice1 = input()
+service_choice2 = input()
 print("ZyCar Wash")
 print("Base car wash -- $10")
-total_price=10
-if service1 in additional:
-    print(service1, "--$", additional[service1])
-    total_price += additional [service1]
-elif(service1 == "----"):
+if service_choice1 in services:
+    print(service_choice1,"-- $",services[service_choice1])
+    base_wash += services[service_choice1]
+elif(service_choice1 == "----"):
     print("-------------")
-if service2 in additional:
-    print(service2, "--$", additional[service2])
-    total_price += additional[service2]
-elif(service2 == "----"):
-    print("-------------")
-print("Total price: $", + total_price)
+if service_choice2 in services:
+    print(service_choice2, "-- $",services[service_choice2])
+    base_wash += services[service_choice2]
+print("----")
+print("Total price: $",base_wash)
+
+#ZyCar Wash
+#Base car wash -- $10
+#Tire shine -- $ 2
+#Wax -- $ 3 #<---fix spacing issues and it will be correct
+#----
+#Total price: $ 15
