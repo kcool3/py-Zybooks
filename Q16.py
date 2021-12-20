@@ -21,19 +21,12 @@ service_choice2 = input()
 print("ZyCar Wash")
 print("Base car wash -- $10")
 if service_choice1 in services:
-    print(service_choice1,"-- $",services[service_choice1])
+    print(str(service_choice1),"-- $"+ str(services[service_choice1]))
     base_wash += services[service_choice1]
 elif(service_choice1 == "----"):
     print("-------------")
 if service_choice2 in services:
-    print(service_choice2, "-- $",services[service_choice2])
+    print(str(service_choice2),"-- $" + str(services[service_choice2]))
     base_wash += services[service_choice2]
 print("----")
-print("Total price: $",base_wash)
-
-#ZyCar Wash
-#Base car wash -- $10
-#Tire shine -- $ 2
-#Wax -- $ 3 #<---fix spacing issues and it will be correct
-#----
-#Total price: $ 15
+print("Total price: $" + str(base_wash))
