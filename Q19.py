@@ -7,14 +7,15 @@ Zero Division Exception: integer division or modulo by zero
 '''
 
 try:
-    user_num=int(input())
-    div_num=int(input())
-    print(' {}'.format(user_num/div_num)) # this part has issues with producing output of 5.0 instead of 5.
+    user_num = int(input())
+    div_num = int(input())
+    quotient = user_num//div_num
+    print(quotient)
 
-except ZeroDivisionError:
-    print("Zero Division Exception: integer division or modulo by zero")
+except ZeroDivisionError as zero:
+   print("Zero Division Exception:", zero)
 
-except ValueError:
-    print("Input Exception: invalid literal for int() with base 10: '15.5'")
+except ValueError as Val:
+   print("Input Exception:",Val)
 
     
