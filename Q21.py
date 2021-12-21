@@ -15,9 +15,7 @@ woman1
 Cat1
 '''
 import csv
-input_file = input("Enter name of file: ")
-import csv
-
+input_file = input()
 with open(input_file) as csv_file:
     data = csv.reader(csv_file, delimiter = ',')
     dictionary = {}
