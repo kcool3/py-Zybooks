@@ -15,13 +15,29 @@ if the input is: -3850 The output is: Exception: Negative step count entered.
 #my code below(be careful with indentation!)
 #define method below
 def steps_to_miles(steps):
-  return steps / 2000
+
+   miles = steps / 2000
+
+   if miles < 0:
+
+      raise ValueError('Exception: Negative step count entered.')
+
+   return miles
+
+ 
+
 if __name__ == '__main__':
-    steps = float(input())
-# my code below
-    if steps < 0:
-       print("Exception: Negative step count entered.")
-    else:
-        print('{:.2f}'.format(steps_to_miles(steps)))
+
+   user_steps = int(input())
+
+   try:
+
+      user_miles = steps_to_miles(user_steps)
+
+      print(f'{user_miles:.2f}')
+
+   except ValueError as expt:
+
+      print(expt)  # This problem is looking for the exception.
 
     
